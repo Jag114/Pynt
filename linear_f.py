@@ -2,12 +2,6 @@ import cv2 as cv
 from cv2.typing import MatLike
 import numpy as np
 #poc5
-"""
-Na ocenę 3 - filtracja z pominięciem krawędzi krańcowych
-Na ocenę 4 - filtracja z duplikacją krawędzi krańcowych
-Na ocenę 5 - filtracja z duplikacją krawędzi krańcowych oraz możliwość 
-wprowadzenia dowolnej maski np. 3x3, 5x5, 7x7.
-"""
 def linear_filter(img: MatLike, mask: np.array) -> MatLike:
     height, width, channels = img.shape
     
